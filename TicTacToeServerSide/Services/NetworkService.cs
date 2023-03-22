@@ -159,9 +159,9 @@ namespace TicTacToeServerSide.Services
         private static string ConvertString(char[,] points)
         {
             var sb = new StringBuilder();
-            for (int i = 0; i < points.Length; i++)
+            for (int i = 0; i < 3; i++)
             {
-                for (int k = 0; k < points.Length; k++)
+                for (int k = 0; k < 3; k++)
                 {
                     sb.Append(points[i, k]);
                     sb.Append('\t');
